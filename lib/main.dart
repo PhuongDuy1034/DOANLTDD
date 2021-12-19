@@ -1,3 +1,4 @@
+import 'package:doanltdd/Screens/Profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:doanltdd/Screens/Welcome/welcome_screen.dart';
 import 'package:doanltdd/constants.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: WelcomeScreen(),
+      home: ProfileScreen(),
     );
   }
 }

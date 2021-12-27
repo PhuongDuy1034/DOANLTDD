@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:doanltdd/Screens/Welcome/welcome_screen.dart';
 import 'package:doanltdd/constants.dart';
 
+import 'Screens/Details/detail_screen.dart';
 import 'Screens/Home/home_screen.dart';
 import 'Screens/Login/login_screen.dart';
 

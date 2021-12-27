@@ -1,3 +1,6 @@
+import 'package:doanltdd/Screens/Home/home_screen.dart';
+import 'package:doanltdd/Screens/home2/home2_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:doanltdd/Screens/Login/components/background.dart';
 import 'package:doanltdd/Screens/Signup/signup_screen.dart';
@@ -7,6 +10,8 @@ import 'package:doanltdd/components/rounded_input_field.dart';
 import 'package:doanltdd/components/rounded_password_field.dart';
 import 'package:doanltdd/constants.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../sizeconfig.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -37,6 +42,7 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
               hintText: "Your Email",
+              icon: Icons.person,
               onChanged: (value) {},
             ),
             RoundedPasswordField(
@@ -44,7 +50,12 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(

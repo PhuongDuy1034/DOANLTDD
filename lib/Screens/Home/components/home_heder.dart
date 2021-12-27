@@ -1,3 +1,4 @@
+import 'package:doanltdd/Screens/Cart/cart_screen.dart';
 import 'package:doanltdd/Screens/Home/components/icon_btn_with.dart';
 import 'package:doanltdd/Screens/Home/components/search_field.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,12 @@ class HomeHeader extends StatelessWidget {
           ),
           IconBtnWithCounter(
             svgSrc: "assets/icons/Cart Icon.svg",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Cart()),
+              );
+            },
           ),
         ],
       ),

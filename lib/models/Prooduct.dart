@@ -27,10 +27,7 @@ List<Product> demoProducts = [
   Product(
     id: 1,
     images: [
-      "assets/images/anhsp1.png",
-      "assets/images/anhsp2.png",
-      "assets/images/anhsp3.png",
-      "assets/images/anhsp4.png",
+      "assets/images/ip131.jpg",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -38,8 +35,8 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Wireless Controller for PS4™",
-    price: 64.99,
+    title: "Điện thoại iPhone 13 Pro Max 128GB",
+    price: 1000,
     description: description,
     rating: 4.8,
     isFavourite: true,
@@ -48,7 +45,7 @@ List<Product> demoProducts = [
   Product(
     id: 2,
     images: [
-      "assets/images/anhsp1.png",
+      "assets/images/ip121.jpg",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -56,8 +53,8 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Nike Sport White - Man Pant",
-    price: 50.5,
+    title: "Điện thoại iPhone 12 Pro Max 128GB",
+    price: 800,
     description: description,
     rating: 4.1,
     isPopular: true,
@@ -65,7 +62,7 @@ List<Product> demoProducts = [
   Product(
     id: 3,
     images: [
-      "assets/images/anhsp2.png",
+      "assets/images/ssf1.jpg",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -73,7 +70,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Gloves XC Omega - Polygon",
+    title: "Điện thoại Samsung Galaxy S21 Ultra 5G 128GB",
     price: 36.55,
     description: description,
     rating: 4.1,
@@ -83,7 +80,7 @@ List<Product> demoProducts = [
   Product(
     id: 4,
     images: [
-      "assets/images/anhsp3.png",
+      "assets/images/sss21.jpg",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -91,7 +88,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Logitech Head",
+    title: "Điện thoại Samsung Galaxy Z Fold3 5G 256GB",
     price: 20.20,
     description: description,
     rating: 4.1,

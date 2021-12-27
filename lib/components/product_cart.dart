@@ -1,3 +1,4 @@
+import 'package:doanltdd/Screens/Details/detail_screen.dart';
 import 'package:doanltdd/models/Prooduct.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -23,7 +24,12 @@ class ProductCard extends StatelessWidget {
       child: SizedBox(
         width: (width),
         child: GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DetailPage()),
+            );
+          },
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,7 +43,9 @@ class ProductCard extends StatelessWidget {
                   ),
                   child: Hero(
                     tag: product.id.toString(),
-                    child: Image.asset(product.images[0]),
+                    child: Image.asset(
+                      product.images[0],
+                    ),
                   ),
                 ),
               ),

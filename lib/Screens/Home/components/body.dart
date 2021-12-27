@@ -110,7 +110,7 @@ class Body extends StatelessWidget {
             SizedBox(height: 2),
             PopularProducts(title1: "Sản Phẩm Mới "),
             SizedBox(height: 10),
-            PopularProducts(title1: "Sản Phẩm Bán Chạy"),
+            //PopularProducts(title1: "Sản Phẩm Bán Chạy"),
           ],
         ),
       ),

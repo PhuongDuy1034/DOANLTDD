@@ -1,3 +1,4 @@
+import 'package:doanltdd/Screens/Home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:doanltdd/Screens/Login/login_screen.dart';
 import 'package:doanltdd/Screens/Signup/components/background.dart';
@@ -30,18 +31,34 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             Image.asset(
               "assets/images/login_bottom1.png",
-              width: size.width * 0.4,
+              width: size.width * 0.3,
             ),
             RoundedInputField(
               hintText: "Your Email",
+              icon: Icons.person,
               onChanged: (value) {},
             ),
             RoundedPasswordField(
               onChanged: (value) {},
             ),
+            RoundedInputField(
+              hintText: "Confirm Password",
+              icon: Icons.lock,
+              icon1: Icons.visibility,
+              onChanged: (value) {},
+            ),
             RoundedButton(
               text: "SIGNUP",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreen();
+                    },
+                  ),
+                );
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
